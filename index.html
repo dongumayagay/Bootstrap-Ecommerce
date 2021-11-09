@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divisorry</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-light px-lg-5">
+      <div class="container px-lg-5">
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBackdrop"
+          aria-controls="offcanvasWithBackdrop"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand mx-auto lead fw-bold">Divisorry</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-dark dropdown-toggle position-relative"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+            <span
+              class="
+                position-absolute
+                top-0
+                start-100
+                translate-middle
+                p-2
+                bg-primary
+                border border-light
+                rounded-circle
+              "
+            >
+            </span>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end px-3 py-2"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <li class="fs-5">
+              <a class="dropdown-item" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cart-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                &ensp; Cart &ensp; <span class="badge bg-secondary">69</span></a
+              >
+            </li>
+            <hr class="mt-2 mb-1" />
+            <li class="fs-5">
+              <a class="dropdown-item" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+                &ensp; Account</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- OFF CANVAS -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel"
+    >
+      <div class="offcanvas-header bg-dark text-white">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Divisorry</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- SEARCH BAR -->
+        <div class="input-group mt-2 mb-4">
+          <input
+            type="search"
+            class="form-control fs-5"
+            placeholder="Search..."
+          />
+          <button class="btn btn-outline-dark px-4 py-2" type="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        <hr />
+        <nav class="nav flex-column">
+          <a href="#" class="nav-link text-dark fs-5 dropdown-item"
+            >All Product</a
+          >
+          <a href="#" class="nav-link text-dark fs-5 dropdown-item"
+            >Men's Clothing</a
+          >
+          <a href="#" class="nav-link text-dark fs-5 dropdown-item"
+            >Women's Clothing</a
+          >
+          <a href="#" class="nav-link text-dark fs-5 dropdown-item"
+            >Wallets and Bags</a
+          >
+          <a href="#" class="nav-link text-dark fs-5 dropdown-item">Headwear</a>
+          <a href="#" class="nav-link text-dark fs-5 dropdown-item"
+            >Socks and Underwear</a
+          >
+        </nav>
+      </div>
+    </div>
+
+    <header class="bg-dark py-5">
+      <div class="text-center py-5">
+        <h1 class="text-white fw-bolder">Stay Weird</h1>
+        <p class="text-white-50 fw-normal lead">
+          that's what makes you unique : )
+        </p>
+      </div>
+    </header>
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+          <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/isda.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Isda</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/dad-bod.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Dad Bod Bag</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/kokak hoodie.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Kokak Hoodie</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/kokak.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Kokak Wallet</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/milktea pa.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Milktea Bag</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/lay's.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Lay's Bag</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/holdap to.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">AntiHoldap Purse</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/pickle rick.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Pickle Rick Boxers</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/jumbo hotdog.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Jumbo Hatdog Boxers</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/muah.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">MMCC boxers</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/cool.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Cool Socks</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="/assets/bigfoot.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-3">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Big foot</h5>
+                          <!-- Product price-->
+                          ₱420.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto stretched-link" href="#">View</a></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <footer class="py-5 bg-dark">
+    <div class="container d-flex justify-content-around">
+      <p class=" text-white">Copyright © 2021 Divisorry</p>
+      <a href="#" class="text-decoration-none text-white" >About</a>
+    </div>
+</footer>
+    
+  </div>
+  </body>
+</html>
