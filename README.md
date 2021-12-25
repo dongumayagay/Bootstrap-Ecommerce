@@ -1,7 +1,7 @@
 # Bootstrap Ecommerce Storefront
 
 To view a live preview hold **Ctrl** and click
-[here](https://wizardly-wozniak-461d29.netlify.app/).  
+[here](http://bootstrap-ecommerce.vercel.app/).  
 The site will open in a new tab.  
 alternatively you can also right click the link above to open the live preview
 
